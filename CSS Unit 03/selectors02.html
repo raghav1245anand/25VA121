@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+       /* #main p{
+        color: #CCC;
+       } */
+       /* #inside p{
+        background-color: aqua;
+       } */
+
+       /* #main > p {
+        background-color: blue;
+       } */
+
+       /* #main + p{
+        background-color: blueviolet;
+       } */
+
+       /* #main ~ p{
+        background-color: cadetblue;
+       } */
+        /* style for a special state of an element. */
+        a{
+            color: brown;
+        }
+        a:link{
+            text-decoration:none; font-size: 20px;
+        }
+        a:hover{
+            color: chartreuse; font-size: 25px;
+        }
+        a:active{
+            color: cornflowerblue;
+        }
+        /* a:visited{
+            color: black;
+        } */
+
+        #main .odd{
+            color: #F04;
+        }
+        #main p:nth-child(even){
+            color: blue;
+        }
+         /* style a specific part of an element. */
+
+         #main p::first-letter{
+            color: rgb(14, 225, 49); font-size: 30px;
+         }
+         #main p::first-line{
+            background-color: aquamarine;
+         }
+         #main p::after{
+            content: "Read more";
+            color: red;
+            font-size: 40px;
+         }
+         img[alt]{
+            color: #F04;
+         } 
+       
+       
+    </style>
+</head>
+<body>
+    <img src="" alt="abes">
+    <!--css combinators-->
+    <div id="main"><!--div first-->
+        <p class="odd">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui tempore ducimus et quam dolores! Quas qui delectus minus, eum itaque quod impedit consequuntur suscipit, nobis quos ipsam quidem quo repellendus.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eum incidunt exercitationem ullam hic magni, facere illo aliquid nemo officiis. Nisi accusamus veniam quas, rem quod ut culpa nam incidunt.</p>
+        <p class="odd">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor dicta ad eaque ut! Cum illo doloremque nemo, iusto laudantium tempore recusandae, neque, iste aliquid nam est eius animi unde?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit dolor totam commodi eveniet facilis nulla, quibusdam quam odio nobis temporibus illo exercitationem! Nemo est, temporibus ut maiores vel earum?</p>
+        <div id="inside"><!--inside first-->
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto quisquam voluptates officiis quia harum assumenda ullam rem optio impedit aliquid tempora, numquam delectus sequi? Adipisci vero voluptate ipsam impedit repudiandae.
+            </p>
+        </div><!--inside first end-->
+    </div><!--div first end-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex officiis eos labore iusto natus? Doloribus laudantium officiis iste soluta, cupiditate numquam accusantium, quae atque sapiente ipsa in sequi molestiae eligendi!
+    </p>
+    <a href="#" title="abes">visit my page!</a>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eligendi laudantium ea facere corrupti ipsum. Porro voluptate, necessitatibus aliquid corporis sapiente praesentium fuga, tempore fugiat debitis iste inventore, consequatur recusandae?
+    </p>
+</body>
+</html>
